@@ -461,3 +461,7 @@ PRODUCT_PACKAGES += \
 # RetroMusic
 PRODUCT_PACKAGES += \
     RetroMusic
+
+# RemovePackages
+PRODUCT_PACKAGES += \
+	RemovePackages
