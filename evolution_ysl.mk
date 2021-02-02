@@ -22,8 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Inherit some common Evolution X stuff.
-EVO_MAINTAINER := Andrey Norton
-EVO_SUPPORT_URL := https://t.me/RedmiY2Official
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 WITH_GAPPS := true
