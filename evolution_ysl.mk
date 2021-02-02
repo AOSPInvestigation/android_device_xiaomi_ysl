@@ -21,21 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
-# Inherit some common Octavi stuff.
-
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
 TARGET_BOOT_ANIMATION_RES := 720
-
-#Gapps
-$(call inherit-product-if-exists, vendor/google/gms/config.mk)
-$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
-
-OCTAVI_BUILD_TYPE := Official
-OCTAVI_DEVICE_MAINTAINER := Tushar Bharti
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+WITH_GAPPS := true
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := octavi_ysl
+PRODUCT_NAME := evolution_ysl
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
 PRODUCT_MANUFACTURER := Xiaomi
@@ -45,8 +39,8 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Build fingerprint
-BUILD_FINGERPRINT := google/coral/coral:11/RQ1A.210105.003/7005429:user/release-keys
-BUILD_DESCRIPTION := coral-user 11 RQ1A.210105.003 7005429 release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys
+BUILD_DESCRIPTION := redfin-user 11 RQ1A.210105.003 7005429 release-keys
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)

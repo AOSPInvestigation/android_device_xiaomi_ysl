@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/octavi_ysl.mk
+     $(LOCAL_DIR)/evolution_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-octavi_ysl-user \
-octavi_ysl-userdebug \
-octavi_ysl-eng	
+evolution_ysl-user \
+evolution_ysl-userdebug \
+evolution_ysl-eng	
