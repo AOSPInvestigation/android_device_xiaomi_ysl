@@ -42,7 +42,7 @@ BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 TARGET_BOARD_SUFFIX := _64
 
 # Kernel
-TARGET_KERNEL_CONFIG := ysl-perf_defconfig
+TARGET_KERNEL_CONFIG := ysl_defconfig
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.usbconfigfs=true
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
